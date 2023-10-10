@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hdiv">
+    <center>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description"><i>Thank you for taking the time to help us improve the platform</i></description>
+</center>
+</div>
+  <form id="survey-form" action="">
+    <div class="insideform">
+    <label id="name-label" for="">Name</label>
+    <br>
+    <input id="name" type="text" placeholder="Enter your name" required>
+    <br>
+    <label id="email-label" for="">Email</label>
+    <br>
+    <input id="email" type="email" placeholder="Enter your Email" required>
+    <br>
+    <label id="number-label" for="" >Age(optional)</label>
+    <br>
+    <input id="number" type="number" placeholder="Age" min="18" max="60" required>
+    <br>
+    <label class="dropdown-label" >Which option best describes your current role?</label>
+    <br>
+    <select name="current role" id="dropdown">
+      <option >Select current role</option>
+      <option value="student">Student</option>
+      <option value="full time job">Full time job</option>
+      <option value="full time learner">Full time learner</option>
+    </select>
+    <br>
+    <label id="radio-label">Would you recommend freeCodeCamp to a friend?</label>
+    <br>
+    <div id="radio">
+    <input class="radio"  type="radio" name="suggest a friend" value="Definitely">Definitely
+    <br>
+    <input class="radio" type="radio" name="suggest a friend" value="Maybe">Maybe
+    <br>
+    <input class="radio" type="radio" name="suggest a friend" value="Not sure">Not sure
+  </div>
+  <br>
+  <label class="dropdown-label" >What is your favorite feature of freeCodeCamp?</label>
+    <br>
+    <select name="favorite feature" id="favorite">
+      <option >Select an option</option>
+      <option value="student">Challenges</option>
+      <option value="projects">Projects</option>
+      <option value="community">Community</option>
+      <option value="open source">Open Source</option>
+    </select>
+    <br>
+    <label id="checkbox-label">What would you like to see improved?</label>
+    <br>
+    <div id="checkbox">
+    <input class="checkbox"  type="checkbox" name="checkbox" value="Front-end Projects">Front-end Projects
+    <br>
+    <input class="checkbox" type="checkbox" name="checkbox" value="Back-end Projects">Back-end Projects
+    <br>
+    <input class="checkbox" type="checkbox" name="checkbox" value="Data Visualization">Data Visualization
+    <br>
+    <input class="checkbox" type="checkbox" name="checkbox" value="Challenges">Challenges
+    <br>
+    <input class="checkbox" type="checkbox" name="checkbox" value="Additional Courses">Additional Courses
+  </div>
+  <br>
+  <label id="suggestion-label">Any comments or suggestions?</label>
+    <br>
+    <textarea name="suggestionbox" id="suggestionbox" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+<br>
+<button id="submit" type="submit">Submit</button>
+  </div>
+</form>
+</body>
+</html>
